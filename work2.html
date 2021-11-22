@@ -34,9 +34,9 @@
 
     <div id="tabsDiv">
         <ul>
-            <li><a href="#result" onclick="changeData('http://localhost:5555/day11/1team.json')" data-url="http://localhost:5555/day11/1team.json">한식</a></li>
-            <li><a href="#result" onclick="changeData('http://localhost:5555/day11/2team.json')" data-url="http://localhost:5555/day11/2team.json">일식</a></li>
-            <li><a href="#result" onclick="changeData('http://localhost:5555/day11/3team.json')" data-url="http://localhost:5555/day11/3team.json">프렌차이즈</a></li>
+            <li><a href="#result" onclick="changeData('http://localhost:5555/21_11_22/1team.json')" data-url="http://localhost:5555/21_11_22/1team.json">한식</a></li>
+            <li><a href="#result" onclick="changeData('http://localhost:5555/21_11_22/2team.json')" data-url="http://localhost:5555/21_11_22/2team.json">일식</a></li>
+            <li><a href="#result" onclick="changeData('http://localhost:5555/21_11_22/3team.json')" data-url="http://localhost:5555/21_11_22/3team.json">프렌차이즈</a></li>
         </ul>
         <div id="result">
             <ul id="list">
@@ -61,6 +61,7 @@
                 console.log(e.target)
                 //e.target.getAttribute("data-url")
                 const url = $(e.target).data("url")
+                console.log(url)
 
                 $.getJSON(url,function(arr){
                     console.log("--------------------")
